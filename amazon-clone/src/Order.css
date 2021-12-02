@@ -1,0 +1,31 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    border: 1px solid lightgray;
+    background-color: white;
+    /* margin: 8rem; */
+}
+
+.order__title {
+    margin: 0 1rem;
+}
+
+.order__title--sub {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__total {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.order > .basketitem button {
+    display: none;
+}
+
+.order + .order {
+    margin: 3rem 0;
+}

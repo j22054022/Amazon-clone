@@ -1,0 +1,62 @@
+.login{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__logo {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    /* keep Aspect ratio when ever we resizing */
+    object-fit: contain;
+    width: 6.25rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login__container{
+    width: 18.75rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: .3rem;
+    border: solid 1px lightgray;
+    padding: 1.25rem;
+}
+
+.login__container form > h5{
+    margin-top: .5rem;
+}
+
+.login__container form > input{
+    /* input如果使用100%就不會有黑線加粗的效果 */
+    width: 98%;
+    height: 1.5rem;
+    margin: 0.2rem 0;
+    background-color: white;
+}
+
+.login__container > p {
+    font-size: .9rem;
+}
+
+.login__signInBtn {
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f0c14b;
+    border-radius: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    cursor: pointer;
+}
+
+.login__registerBtn {
+    height: 2rem;
+    margin-top: 1rem;
+    border: 1px solid;
+    border-color: darkgray;
+    cursor: pointer;
+}

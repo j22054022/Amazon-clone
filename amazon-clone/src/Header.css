@@ -1,0 +1,72 @@
+.header{
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    /* 在還沒有碰到 scrolling ancestor，就像是 position: relative 一樣；在碰到 scrolling ancestor 後，就像是 position: absolute 一樣，位置會固定在相對於參考點的絕對位置上，而這個參考點就是 scrolling ancestor。 */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header__logo{
+    width: 6.25rem;
+    /* object-fit 是一個 CSS 屬性，用於決定一個可替換 resource 的 element（img, video, iframe...）如何適應定義好寬高的 HTML 標籤。 */
+    object-fit: contain;
+    margin: 0 1.25rem;
+    margin-top: 1.13rem;
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    /* 因parent element是flex，這裡flex 1，其他child element沒設定，代表會將剩餘空間全部拿走 */
+    flex: 1
+}
+
+.header__searchInput{
+    height: 0.75rem;
+    padding: 0.63rem;
+    width: 100%;
+    border: none;
+}
+
+.header__searchIcon{
+    padding: 0.31rem;
+    height: 1.38rem;
+    background-color: #cd9842;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.header__option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.63rem;
+    margin-right: 0.63rem;
+    color: white;
+}
+
+.header__option--main{
+    font-size: 62.5%;
+}
+
+.header__option--sub{
+    font-size: 81.3%;
+    font-weight: 800;
+}
+
+.header__basket{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header__basketCount{
+    margin-left: 0.63rem;
+    margin-right: 0.63rem;
+}

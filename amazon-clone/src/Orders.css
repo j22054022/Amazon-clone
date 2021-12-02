@@ -1,0 +1,16 @@
+.orders {
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+.orders__title {
+    padding: 1rem 5rem;
+}
+
+.orders__content {
+    /* position: absolute; */
+    /* top: 5%; */
+    /* left: 13%; */
+    padding: 1rem 5rem;
+}

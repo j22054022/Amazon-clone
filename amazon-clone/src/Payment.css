@@ -1,0 +1,71 @@
+.payment__title {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+}
+
+.payment__title > span {
+    color:blueviolet;
+}
+
+.payment__content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    
+}
+
+.payment__subcontent {
+    display: flex;
+    border-bottom: rgb(234, 237, 237) .25rem solid;
+}
+
+.payment__subtitle {
+    /* box-sizing: content-box; */
+    font-weight: bold;
+    margin: 2rem 3rem;
+    /* width: 8.5rem; */
+    flex: 0.1;
+}
+
+.payment__adress__content {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    flex: 0.9;
+}
+
+.payment__item__content {
+    flex: 0.9;
+}
+
+.payment__item__content > .basketitem {
+    margin: 2rem 0 1rem 0;
+    padding: 0;
+}
+
+.payment__item__content > .basketitem + .basketitem {
+    margin: 1rem 0;
+}
+
+.payment__item__content > .basketitem:last-child {
+    margin: 1rem 0 2rem 0;
+}
+
+.payment__method__details {
+    flex: 0.4;
+}
+
+.payment__method__details__btn {
+    background-color: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 1.88rem;
+    margin: .5rem 0;
+    font-weight: bolder;
+    border-color: #a88734 #9c7e31 #846a29;
+}
+
+.payment__method__details__btn:active {
+
+}

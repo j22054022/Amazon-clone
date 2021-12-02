@@ -1,0 +1,29 @@
+.basketitem{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.basketitem__img {
+    display: flex;
+    /* 用了以後會防止圖片放大 */
+    align-items: center;
+}
+
+.basketitem__img > img{
+    width: 8rem;
+    max-height: 12rem;
+    margin-right: 2rem;
+}
+
+.basketitem__info > button {
+    background-color: #f0c14b;
+    border: 0.06rem solid;
+    margin-top: 0.63rem;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    padding: 0 0.3rem;
+    cursor: pointer;
+}
