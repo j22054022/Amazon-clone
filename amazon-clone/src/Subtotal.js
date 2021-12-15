@@ -9,6 +9,10 @@ function Subtotal() {
   const [state, dispatch] = useStateValue();
   let history = useHistory();
 
+  const disableBtn = {
+    opacity: "0.5",
+  };
+
   return (
     <div className="subtotal">
       <CurrencyFormat
@@ -29,12 +33,15 @@ function Subtotal() {
         This order contains a gift
       </small>
       <button
+        disabled={!state.user}
         onClick={() => {
           history.push("/payment");
         }}
+        style={state.user ? null : disableBtn}
       >
         Preceed to Checkout
       </button>
+      {state.user ? null : <p>Please sign in</p>}
     </div>
   );
 }
